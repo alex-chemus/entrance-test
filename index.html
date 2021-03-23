@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css-styles --> 
+    <link rel="stylesheet" href="./styles/css/form/form.css">
+    <link rel="stylesheet" href="./styles/css/form/__email/form__email.css">
+    <link rel="stylesheet" href="./styles/css/form/__name/form__name.css">
+    <link rel="stylesheet" href="./styles/css/form/__phone/form__phone.css">
+    <link rel="stylesheet" href="./styles/css/form/__title/form__title.css">
+</head>
+<body>
+    <form class="form">
+        <h1 class="form__title">Задать вопрос</h1>
+        <input required
+            pattern="[а-яА-Я–\s-]+"
+            class="form__name"
+            type="text" 
+            name="name" 
+            placeholder="Фамилия Имя Отчество *">
+        <input required
+            pattern="[\d\s\+-]+"
+            class="form__phone"
+            type="text" 
+            name="phone" 
+            placeholder="Телефон *">
+        <input 
+            class="form__email"
+            type="email" 
+            name="email" 
+            placeholder="Email">
+        <input type="submit" value="Отправить запрос">
+    </form>
+
+<!-- js-scripts -->
+<script src="./main.js"></script>
+</body>
+</html>

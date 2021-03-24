@@ -7,7 +7,7 @@ form.addEventListener('submit', event => {
     const formData = new FormData(form)
     console.log(formData)
     
-    fetch('https://60376bfd5435040017722533.mockapi.io/form', {
+    fetch('https://60376bfd5435040017722533.mockapi.io/formRej', {
         method: 'POST',
         body: formData
     })

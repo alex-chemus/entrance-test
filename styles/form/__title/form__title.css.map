@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,YAAY;EACR,MAAM,EAAE,CAAC;EACT,aAAa,EAAE,IAAI;EAKnB,WAAW,EAAE,QAAQ;EACrB,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,IAAI;EACjB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,OAAO",
+"sources": ["../../sass/form/__title/form__title.sass"],
 "names": [],
 "file": "form__title.css"
 }

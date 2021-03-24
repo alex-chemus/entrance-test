@@ -11,6 +11,17 @@ form.addEventListener('submit', event => {
         method: 'POST',
         body: formData
     })
-    .then(response => response.json())
+    .then(response => { 
+        console.log(response.status)
+        if (response.status != 201) {
+            return Promise.reject()
+        }
+        response.json()
+    })
     .then(data => { console.log(data) })
+    .catch(error => {
+        alert("Произошла ошибка! Попробуйте отправить позже")
+        console.log(error)
+    })
+    .finally(() => { form.reset() })
 })

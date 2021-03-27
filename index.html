@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="./styles/form/__title/form__title.css">
     <link rel="stylesheet" href="./styles/form/__input/form__input.css">
     <link rel="stylesheet" href="./styles/form/__button/form__button.css">
-    <!--<link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">-->
 
     <style>
         body {
@@ -43,8 +41,12 @@
             type="text" 
             name="phone" 
             placeholder="Телефон *">
+        <!--
+            предыдущая версия паттерна для form__button
+            pattern="[A-Za-z0-9][\w\+~!#\$%&`'={}\|(\.[\w\+~!#\$%&`'={}\|])-]*@[A-Za-z0-9\.-]+\.[A-Za-z0-9-]+$"
+        -->    
         <input 
-            pattern="[A-Za-z0-9][A-Za-z0-9\+_~!#\$%&`'={}\|\.-]*@[A-Za-z0-9\.-]+\.[A-Za-z0-9-]+$"
+            pattern="^[-a-z0-9!#$%&'*+/=?^_`{|}~]+(\.[-a-z0-9!#$%&'*+/=?^_`{|}~]+)*@([a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?\.)*[a-z][a-z]+$"
             class="form__email form__input"
             type="email" 
             name="email" 
